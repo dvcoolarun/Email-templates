@@ -42,3 +42,4 @@ Email Design is(done in table) Yupp!(div,span, other element not supported)
 
 ** set vertical alignment to top for both the cells so that they vertically align to top, default verticle alignment is "middle".
 
+** Here we have set the width of the images using HTML at 100% of the column width. This, again, is so that if we make this email responsive, we only have to use media queries to change the width of the parent element. We'll have to override the height in pixels because using style="height: auto" now won’t work in everything, So we’ll set it using pixels. This means we'd have to set height: auto!important on those images using media queries to override the pixel value, but we could do that with a single class. As we set the width as a percentage, we won’t need to override that. The fewer things to override, the better.
