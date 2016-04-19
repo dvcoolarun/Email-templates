@@ -1,2 +1,3 @@
-#This Repo Belongs to Basic Email Templates with Best Pracices
+#This Repo Belongs to Basic Email Templates with Best Practices.
+
 
