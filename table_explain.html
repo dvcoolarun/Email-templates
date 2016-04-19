@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Table Usage</title>
+  <style>
+  table,
+  th,
+  td {
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+  /* For Padding in Cells */
+
+  th,
+  td {
+    padding: 15px;
+    text-align: left;
+  }
+  /* Border spacing don't work with the Border Collapse Property */
+
+  table {
+    border-spacing: 5px;
+  }
+
+  #new_table {
+    background: #eee;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #new_table tr:nth-child(odd) {
+    background-color: #fff;
+  }
+
+  #new_table tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  #new_table th {
+    background-color: #000;
+    color: #fff;
+  }
+  </style>
+</head>
+
+<body>
+  <!--
+    Tables are defined with the <table> tag
+    Tables are divided with table rows with the <tr> tag
+    Tables rows are divided into table data with the <td> tag
+    A table row can also be divided (table Headings) with the <th> tag
+    Table Data:- <td> are the data Containers of the Table .(they can contain all sort of HTML elements like text, images, list , other tables)
+    table heading are definded with the th tag
+    By Default all Major browsers display table headings as bold and centered.
+    *(if Table has Collapsed borders, borders-spacing has no effect.)Border Spacing :- specifies the space between the cells.
+    To set the border spacing for a table, use the css(border-spacing) property.
+   -->
+  <!--
+    cell that spans multiple spans(use colspan in Td/Th)
+    -->
+  <!--
+    To make a cell span more than one row, use the rowspan attribute(rowspan in td/th)
+     -->
+  <!--
+    HTML table with the caption tag(to add the caption in the table caption tag must be inserted in the table)
+     -->
+  <!--
+    To describe the one style for the table add the id attribute to particular table.
+     -->
+  <!--
+    * Chapter Summary
+    * Use the HTML table tag to define the table
+    * tr tag to define a table
+    * border-spacing is use for the border spacing b/w the cells.
+    * use the colspan to span multiple columns.
+    * use the rowspan to span multiple rows.
+    * use the id attribute to uniquely define one table.
+   -->
+  <!--
+    * In Table rows are "horizantal" collections of items belonging to certain category.
+    * columns are "vertical" collections
+    -->
+  <!--
+    * <col> tag specifies column properties for each column with a <colgroup> element.
+    * <col> tag is useful for applying styles for entire columns, instead of repeating the style for each cell, for each row.
+    * col tag has no ending tag.
+    -->
+  <!--
+      * colgroup specifies a group of column properties for each column with a <colgroup> element.
+      * col specifes column propterties for each column within a <colgroup> element.
+     -->
+  <!--
+     *  <thead> tag is used to group header content in an html table
+     *  <tboy> tag is used to group body content in an html table.
+     *  <tfoot> tag is used to group footer content in an html table.
+      -->
+  <!--
+    ** Browsers can use these elements to enable scrolling of the table body independently of the header and footer.
+
+    ** Also when printing a large table that spans multiple pages, (these elements can enable header and footer to be printed at top and bottom of each page.
+
+    ** thead must be used in the following context: As a child of table element, after any <caption>, and <colgroup> elements, before any <tbody>, <tfoot> , <tr> element.
+
+    **tbody tag must be used in the following context:- As a child of table element , after any <caption>, <colgroup> , <thead> element.
+
+    **tfoot tag must be used in the following context: As a child of <table> element, after any <caption>, <colgroup> and <thead>      -->
+  <table style="width:100%">
+    <caption>Monthly Saving</caption>
+    <colgroup>
+      <col span="2" style="background-color: red">
+      <col style="background-color: yellow">
+    </colgroup>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </table>
+  <table id="new_table">
+    <tr>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>Arun</td>
+      <td>Takkar</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <td>Sunny</td>
+      <td>nasa</td>
+      <td>101</td>
+    </tr>
+  </table>
+</body>
+
+</html>
