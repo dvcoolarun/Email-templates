@@ -1,6 +1,6 @@
 ##This Repo Belongs to Basic Email Templates with Best Practices.
 
-* **Structure First**
+* *Structure First*
 	* Build structure of your email first(means in table with borders) so that you can be able to see what you are creating().
 
 * *Test often*
@@ -46,5 +46,10 @@
 
 *Whenever use css rules in the head you must use tool to bring it all inline at the end of the process (mailchimp or campaign moniter they automatically take care of these step)*
 
+<<<<<<< HEAD
 *You must do this because some clients, such as Gmail, will ignore your style tag contents.**
 	* Premailer :- can be used to bring css inline(if tool is used remember to take out your media queries before processing than reinsert)
+=======
+* **You must do this because some clients, such as Gmail, will ignore your style tag contents.**
+	* Premailer :- can be used to bring css inline(if tool is used remember to take out your media queries before processing than reinsert)
+>>>>>>> 9e943b1aa17fe9133e6994c230f9a254ff57f144
